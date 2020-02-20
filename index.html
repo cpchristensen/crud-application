@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD App</title>
+    </head>
+
+    <body>
+        <h1>CRUD App Frontend</h1>
+
+        <form action="/stocks/api/v1.0/createStock/" method="POST">
+            <h4>Create Stock</h4>
+            Stock Symbol:
+            <input type="text" name="ticker">
+            <br>
+            Payload:
+            <input type="text" name="json-payload" placeholder="Enter JSON here"/>
+            <br>
+
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <form action="/stocks/api/v1.0/getStock/" method="POST">
+            <h4>Get Stock</h4>
+            Stock Symbol:
+            <input type="text" name="ticker">
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <form action="/stocks/api/v1.0/updateStock/" method="POST">
+            <h4>Update Stock</h4>
+            Stock Symbol:
+            <input type="text" name="ticker"/>
+            <br>
+            Payload:
+            <input type="text" name="json-payload" placeholder="Enter JSON here"/>
+            <br>
+
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <form action="/stocks/api/v1.0/deleteStock/" method="POST">
+            <h4>Delete Stock</h4>
+            Stock Symbol:
+            <input type="text" name="ticker"/>
+            <br>
+
+            <input type="submit" value="Submit"/>
+        </form>
+
+
+
+
+        <form action="/stocks/api/v1.0/stockReport/" method="POST">
+            <h4>Stock Report</h4>
+            Stock Symbols:
+            <input type="text" name="tickers", placeholder="TSLA,EBAY,COP"/>
+            <br>
+
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <form action="/stocks/api/v1.0/industryReport/" method="POST">
+            <h4>Industry Report</h4>
+            Industry Name:
+            <input type="text" name="industry"/>
+            <br>
+
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <form action="/stocks/api/v1.0/portfolio/" method="POST">
+            <h4>Portfolio</h4>
+            Company Name:
+            <input type="text" name="company"/>
+            <br>
+
+            <input type="submit" value="Submit"/>
+        </form>
+    </body>
+</html>
